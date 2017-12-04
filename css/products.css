@@ -1,0 +1,139 @@
+
+@media screen and (min-width: 768px) {
+	.wrapper {
+	}
+}
+.wrapper {
+	background: #144e77;
+}
+
+.free_composing-1 {
+	background: #144d76 url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-product/page-product-bg.png); 
+	background-size: contain;
+}
+.free_composing {
+    width:100%; 
+    margin:0 auto;
+    overflow: hidden;
+    background: #fff;
+}
+.free_composing-1 p {
+	color: #fff;
+}
+
+.free_composing_content {
+	clear: both;
+	margin: 0 auto;
+	padding: 0; 
+	width: 1024px;
+}
+.free_composing_content .content-group-text {
+	display: inline-block;
+	margin-left: 40px;
+	line-height: 1.8;
+	text-align: right;
+	font-size: 16px;
+	color: #666;
+	padding-top: 10px;
+
+}
+.free_composing_content .content-group-image {
+	display: inline-block;
+	margin-right: 30px;
+	width: 560px;
+	min-height: 550px;
+}
+.free_composing_content .content-group-image img {
+	position: absolute;
+	top: 50%;
+	/*left: 50%;*/
+}
+.free_composing_content .content-group-image img:nth-child(1) {
+	z-index: 1;
+	margin-top: -233px;
+	left: -30%;
+	/*margin-left: -320px;*/
+	visibility: visible; 
+	animation-name: fadeInLeft;
+	animation-delay: 0.8s;
+}
+.free_composing_content .content-group-image img:nth-child(2) {
+	z-index: 2;
+	margin-top: -204px;
+	margin-left: -21%;
+	/*margin-left: -272px;*/
+	visibility: visible;
+	animation-name: fadeInLeft;
+	animation-delay: 1.5s;
+}
+.free_composing_content .content-group-image img:nth-child(3) {
+	z-index: 3;
+	margin-top: -162px;
+	margin-left: -5%;
+	/*margin-left: -200px;*/
+	visibility: visible; 
+	animation-name: fadeInLeft;
+	animation-delay: 3s;
+}
+/*图文出现动态效果*/
+	/*左图右文*/
+	.free_composing-1 .content-group-image {
+		position: relative;
+		visibility: visible; 
+	}
+	.free_composing-1 .content-group-text {
+		visibility: visible; 
+		animation-delay: 0.5s; 
+		animation-name: fadeInRight;
+		margin-left: 50px;
+	}
+	/*左文右图*/
+	.free_composing .content-group-image {
+		visibility: visible; 
+		animation-delay: 0.8s; 
+		animation-name: fadeInRight;
+	}
+	.free_composing .content-group-text {
+		visibility: visible; 
+		animation-delay: 0.5s; 
+		animation-name: fadeInLeft;
+		margin-right: 50px;
+
+	}
+
+
+.part-right {
+    visibility: visible; 
+    animation-delay: 0.5s; 
+    animation-name: fadeInLeft;
+}
+
+
+.pro-flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	width: 80%;
+	padding: 0 !important;
+	margin: 30px auto;
+}
+.pro-flex .pro-left, 
+.pro-flex .pro-right {
+    visibility: hidden;
+	width: 50%;
+}
+@media screen and (max-width: 768px) {
+	.pro-flex .pro-left, .pro-flex .pro-right {
+		width: 100%;
+	}
+}
+
+/*width:50px;height:50px;background:red;*/
+
+
+

@@ -1,0 +1,84 @@
+<nav class="navbar navbar-fixed-top my-navbar" id="top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<li class="nav navbar-brand dropdown">
+				<a class="fontc-f" href="index.html">
+					<img src="http://ymify-website.oss-cn-shanghai.aliyuncs.com/logo.png" alt="">圆马信息科技<br>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="">Action</a></li>
+					<li><a href="">Action</a></li>
+					<li class="divider"></li>
+					<li><a href="">Action</a></li>
+				</ul>
+			</li>
+		</div>
+		<div class="collapse navbar-collapse container" id="bs-example-navbar-collapse-1" role="main">
+            <ul class="nav navbar-nav menu">
+                <li class="dropdown"><a href="index.html">首页</a></li>
+                <li class="dropdown">
+                	<a href="javascript:void(0);">产品方案</a>
+                    <ul class="submenu">
+                        <li><a href="products.html#page-data">大数据</a></li>
+                        <li><a href="products.html#page-risk">风控</a></li>
+                        <li><a href="products.html#page-internet">物联网</a></li>
+                        <li><a href="products.html#page-webstation">网页建站</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                	<a href="javascript:void(0);">圆马新闻</a>
+                    <ul class="submenu">
+                        <li><a href="news.html">企业新闻</a></li>
+                        <li><a href="news.html">行业新闻</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                	<a href="javascript:void(0);">圆马信息</a>
+                    <ul class="submenu">
+                        <li><a href="aboutus.html">关于我们</a></li>
+                        <li><a href="contactus.html">联系我们</a></li>
+                        <li><a href="joinus.html">加入我们</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="dropdown" style="opacity:0;width:1px;"></li> -->
+            </ul>
+        </div>
+	</div>
+</nav>
+<script>
+(function(){
+	// 添加header当前页active
+	$('.nav.navbar-nav li a').each(function () {
+		if (this.href == document.location.href || document.location.href.search(this.href) >= 0) {
+			$(this).parents('.dropdown').addClass('active');
+		}
+	});
+	
+	// header 滑动固定顶部
+	$(window).scroll(function () {	
+		if ($(".navbar").offset().top > 50) {
+			$(".navbar-fixed-top").addClass("top-nav");	
+		} else {
+			$(".navbar-fixed-top").removeClass("top-nav");
+		}	
+	});
+
+	function productSlide(target){
+		$(target).click(function () {
+			var str = $(this).attr("href");
+			var id = str.substring(str.indexOf("#"));
+		    $("html, body").animate({
+		    	scrollTop: $(id).offset().top -120+ "px"}, 500);
+		    return false;
+		});
+	}
+	productSlide('.submenu a');
+	productSlide('.foot-pro-part a');
+})();
+</script>

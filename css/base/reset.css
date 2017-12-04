@@ -1,0 +1,243 @@
+/* 
+	basic reset
+*/
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section, main {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+/* defined reset*/
+
+/*font*/
+	* {
+		font-family: Microsoft YaHei;
+	}
+	.font12 {
+		font-size: 12px!important;
+	}
+	.font14 {
+		font-size: 14px!important;
+	}
+	.font16 {
+		font-size: 16px!important;
+	}
+	.font18 {
+		font-size: 18px!important;
+	}
+	.font20 {
+		font-size: 20px!important;
+	}
+	.font22 {
+		font-size: 22px!important;
+	}
+	.font24 {
+		font-size: 24px!important;
+	}
+	.font26 {
+		font-size: 26px!important;
+	}
+	.font30 {
+		font-size: 30px!important;
+	}
+	.fontc-9 {
+		color: #999;
+	}
+	.fontc-0 {
+		color: #000!important;
+	}
+	.fontc-f {
+		color: #fff!important;
+	}
+	.fontc-blue {
+		color: #004994;
+	}
+	.tr {
+		text-align: right;
+	}
+	.tc {
+		text-align: center;
+	}
+	.tl {
+		text-align: left;
+	}
+	.line26 {
+		line-height: 26px;
+	}
+	.line30 {
+		line-height: 30px;
+	}
+	/*单行省略*/
+	.omit {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+	}
+	.textc {
+		text-align: center;
+	}
+	.textl {
+		text-align: left;
+	}
+	.textr {
+		text-align: right;
+	}
+/**/
+	.hide {
+		display: none;
+	}
+	.show {
+		display: block;
+	}
+	.fr {
+		float: right;
+	}
+	.fl {
+		float: left;
+	}
+	.clearfix:after{
+		content:"";
+		height:0;
+		line-height:0;
+		display:block;
+		visibility:hidden;
+		clear:both
+	}
+	.clearfix{
+		zoom:1;
+	}
+/*动画*/
+	.ani {
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+/*flex布局*/
+	.flexbox {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: -moz-flexbox;
+		display: flex;
+	}
+	.flex-v {
+		-webkit-box-orient: vertical;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.flex {
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		-webkit-flex: 1;
+		flex: 1;
+		display: block;
+	}
+	.flex-center {  /*水平居中 垂直居中*/
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.flex-align-center { /*垂直居中*/
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.flex-pack-center { /*水平居中*/
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.flex-pack-justify {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+/*其他布局*/
+	.pos-rel {
+		position: relative;
+	}
+	.mt-10 {
+		margin-top: 10px;
+	}
+	.ml-10 {
+		margin-left: 10px;
+	}
+	.ml-30 {
+		margin-left: 30px;
+	}
+	.mb-10 {
+		margin-bottom: 10px;
+	}
+	.mb-20 {
+		margin-bottom: 20px;
+	}
+	.mb-30 {
+		margin-bottom: 30px;
+	}
+	.pd-10 {
+		padding: 10px;
+	}

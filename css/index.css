@@ -1,0 +1,465 @@
+	.wrapper {
+		background: #fff;
+	}
+
+	/*=============首页每个部分的标题 公共=============*/
+		.container-title {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		.container-title .titext {
+			position: relative;
+			display: inline-block;
+		}
+		.container-title .titext>div:after,
+		.container-title .titext>div:before {
+			position:absolute;
+			display: block;
+			content:"";
+			width: 50px;
+			height:1px;
+			background-color: #000;
+			z-index:1;
+		}
+		.container-title .titext>div:after {
+			left: -80px;
+			top:15px;
+		}
+		.container-title .titext>div:before {
+			right: -80px;
+			top:15px;
+		}
+
+		.container-title .titext p {
+			margin-top: 10px;
+
+		}
+	/*=============首页每个部分的标题 公共end=============*/
+	
+	/*=============我们的产品ym-introduce=============*/
+		.product-info {
+			color: 
+		}
+		.ym-introduce {
+			margin-top: 20px;
+			padding: 50px 0;
+			background: #fff;
+		}
+		.ym-introduce .row {
+			text-align: center;
+		}
+		.ym-introduce .row > div {
+			margin-top: 10px;
+		}
+		.ym-introduce .row > div > div {
+			padding: 10px;
+		}
+		.ym-introduce .row > div > div img {
+			margin-bottom: 10px;
+			border-bottom: 1px dashed #eee;
+		}
+		
+		.ym-introduce .row p {
+			line-height: 30px;
+			font-family: 'SimHei';
+			font-size: 12px;
+		}
+		.ym-introduce p.font22 {
+			font-family: 'Microsoft YaHei';
+			margin: 20px 0;
+		}
+		.ym-introduce .product-tit {
+			line-height: 40px;
+		}
+		.proicon {
+			position: relative;
+		}
+		.ym-introduce .row .col-md-3:hover .proicon > span {
+			-webkit-transform: rotate(180deg);
+			-webkit-transform-origin: center center;
+		}
+		.proicon span {
+			display: inline-block;
+			width: 116px;
+			height: 116px;
+			background: url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/index-circles.png) no-repeat;
+		}
+		.proicon em {
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			margin-top: -50px;
+			margin-left: -50px;
+			width: 100px;
+			height: 100px;
+			z-index: 1;
+		}
+		.proicon-1 em {
+			background: url('http://ymify-website.oss-cn-shanghai.aliyuncs.com/index-proicon.png') no-repeat;
+			background-position: 13px 12px; 
+		}
+		.proicon-2 em {
+			background: url('http://ymify-website.oss-cn-shanghai.aliyuncs.com/index-proicon.png') no-repeat;
+			background-position: 22px -95px; 
+		}
+		.proicon-3 em {
+			background: url('http://ymify-website.oss-cn-shanghai.aliyuncs.com/index-proicon.png') no-repeat;
+			background-position: 24px -220px; 
+		}
+		.proicon-4 em {
+			background: url('http://ymify-website.oss-cn-shanghai.aliyuncs.com/index-proicon.png') no-repeat;
+			background-position: 24px -321px; 
+		}
+	/*=============我们的产品ym-introduce end=============*/
+
+
+	/*=============关于我们=============*/
+		.ym-about-us {
+			width: 100%;
+			height: 534px;
+			padding: 72px 30px 40px 30px;
+			background: #0a2244 url('http://ymify-website.oss-cn-shanghai.aliyuncs.com/Shadingcontactus.png');
+			background-size: cover;
+		}
+		.ym-about-us .container-title {
+			margin-bottom: 20px;
+			color: #fff;
+		}
+		.ym-about-us .container-title .titext>div:after, 
+		.ym-about-us .container-title .titext>div:before {
+			background: #fff;
+		}
+		.ym-about-us .about-us-info {
+			width: 922px;
+			padding: 25px 32px;
+			margin: 0 auto;
+			background: rgba(0,0,0,.5);
+			line-height: 26px;
+			color: #dadada;
+			text-align: center;
+		}
+		.ym-about-us .about-us-info p {
+			font-family: 'Microsoft YaHei';
+			font-size: 14px;
+		}
+		.ym-about-us .aboutus-svg-btn {
+			position: relative;
+			display: inline-block;
+			height: 45px;
+			margin: 20px 0 0 0;
+		}
+		.ym-about-us .aboutus-svg-btn:after {
+			content: 'READ MORE';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -47px;
+			margin-top: 10px;
+			font-size: 16px;
+			color: #fff;
+		}
+		.ym-about-us .aboutus-svg-btn .shape {
+			fill: transparent;
+			stroke-dasharray: 140 540;
+			stroke-dashoffset: -280;
+			stroke-width: 8px;
+			stroke: #fff;
+		}
+		@keyframes draw {
+			0% {
+				stroke-dasharray: 140 540;
+				stroke-dashoffset: -280;
+				stroke-width: 8px;
+			}
+			100% {
+				stroke-dasharray: 760;
+				stroke-dashoffset: 0;
+				stroke-width: 2px;
+			}
+		}
+		.ym-about-us.ani .shape {
+			-webkit-animation: 0.5s draw linear forwards;
+			animation: 0.5s draw linear forwards;
+		}
+	/*=============关于我们 end=============*/
+	
+	/*=============新闻动态=============*/
+		/* .ym-news {
+			width: 100%;
+			padding: 30px;
+			padding: 30px;
+		}
+		.news-flex {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-moz-flex-wrap: wrap;
+			width: 80%;
+			padding: 0 !important;
+			margin: 30px auto;
+		}
+		.news-flex .featured-new, 
+		.news-flex .new-entry {
+			width: 50%;
+			max-height: 550px;
+		}
+		.news-flex .featured-new {
+			padding: 2em;
+			width: 50%;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			position: relative;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-moz-flex-wrap: wrap;
+		}
+		@media screen and (max-width: 1190px) {
+			.news-flex .featured-new, .news-flex .new-entry {
+				width: 100%;
+			}
+		}
+		.news-flex .featured-new:before {
+			position: absolute;
+			top: 15px;
+			bottom: 15px;
+			left: 15px;
+			right: 15px;
+			content: '';
+			border: 1px solid rgba(255, 255, 255, 0.4);
+		}
+		.news-flex .new-entry {
+			padding: 0 4em;
+		}
+		@media screen and (max-width: 1190px) {
+			.news-flex .new-entry {
+				padding: 4em 1em;
+			}
+		}
+		.news-flex .new-entry h2 {
+			display: block;
+			font-size: 13px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 700;
+			margin-bottom: 40px;
+			color: rgba(0, 0, 0, 0.4);
+		}
+		.news-flex .new-entry .pernew-post {
+			margin-bottom: 2.5em;
+			display: block;
+			position: relative;
+		}
+		.news-flex .new-entry .pernew-post .desc {
+			position: relative;
+			background: #9c9c9c;
+		}
+		.news-flex .new-entry .pernew-post .article-num {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			display: inline-block;
+			color: #fff;
+			font-size: 20px;
+			background: #454545;
+		}
+		.news-flex .new-entry .pernew-post .desc h3 {
+			font-weight: 300;
+			font-family: "Oxygen", sans-serif;
+			font-size: 16px;
+			line-height: 30px;
+			margin-bottom: 10px;
+		}
+		.news-flex .new-entry .pernew-post .desc span {
+			font-size: 13px;
+			color: #b3b3b3;
+		}
+		.news-flex .new-entry .pernew-post .img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 90px;
+			height: 90px;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			border: 4px solid #fff;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			border-radius: 50%;
+		}
+		.segmenter {
+			width: 100vw;
+			height: 100vh;
+			position: relative;
+			overflow: hidden;
+		}
+		.segmenter__image {
+			width: 100%;
+			display: block;
+		}
+		.segmenter__background,
+		.segmenter__pieces,
+		.segmenter__piece-wrap,
+		.segmenter__piece-parallax,
+		.segmenter__piece {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+		}
+		.segmenter__piece-parallax {
+			-webkit-transition: -webkit-transform 0.2s ease-out;
+			transition: transform 0.2s ease-out;
+		}
+		.segmenter__pieces {
+			-webkit-perspective: 400px;
+			perspective: 400px;
+		}
+		.segmenter__background,
+		.segmenter__piece {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
+		.segmenter__shadow {
+			position: absolute;
+			opacity: 0;
+			box-shadow: 0px 2px 15px rgba(0,0,0,0.7);
+		} */
+	/*=============新闻动态 end=============*/
+
+	/*=============新闻动态=============*/
+	.ym-news {
+		margin-top: 70px;
+	}
+	/* .ym-news a:hover {
+		color: #0b142a;
+	}
+	.ym-news a:hover h3,
+	.ym-news a:hover p {
+		color: #0b142a;
+	} */
+	.news-part {
+		width: 1200px;
+		margin: 60px auto;
+	}
+	.news-imgbox {
+		float: left;
+		width: 600px;
+		height: 367px;
+	}
+	.news-imgbox .news-carousel {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.news-imgbox .carousel-inner .img {
+		width: 100%;
+		height: 100%;
+	}
+	/*.news-imgbox img {
+		width: 100%;
+		height: 100%;
+	}*/
+	.news-info {
+		position: relative;
+		float: left;
+		width: 588px;
+		height: 366px;
+		margin-left: 12px;
+	}
+	.news-info .news-per {
+		position: relative;
+		width: 100%;
+		height: 98px;
+		padding-left: 127px;
+		background: #9c9c9c;
+		color: #fff;
+	}
+	.news-per+.news-per {
+		margin-top: 37px;
+	}
+	.news-info .news-per .article-num {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 97px;
+		height: 97px;
+		line-height: 97px;
+		text-align: center;
+		font-size: 26px;
+		color: #fff;
+		background: #454545;
+		font-size: 60px;
+		font-family: 'Microsoft YaHei';
+	}
+	.article-num.glyphicon-triangle-right:before {
+		display: none;
+	}
+	.news-info .news-per:hover .article-num {
+		background: #0b142a;
+	}
+	.news-per:hover .article-num.glyphicon-triangle-right:before {
+		display: block;
+	    position: absolute;
+	    top: 5px;
+	    right: -19px;
+	    color: #0b142a;
+	    font-size: 26px;
+	    font-family: "Glyphicons Halflings";
+	}
+	.news-per:hover a,
+	.news-per:hover h3,
+	.news-per:hover p {
+		color: #fff;
+	}
+	.news-per:hover {
+		background: #454545;
+	}
+	
+	.news-per .news-per-tit {
+		width: 100%;
+		display: inline-block;
+		padding: 10px 0 0 10px;
+	}
+	.news-per-tit>h3 {
+		display: inline-block;
+		width: 305px;
+		font-size: 18px;
+		font-family: 'Microsoft YaHei';
+		color: #fff;
+
+	}
+	.news-per-tit>p {
+		color: #Fff;
+	}
+	.news-per p {
+		display: inline-block;
+		float: right;
+		padding-right: 10px;
+	}
+	.news-per-con {
+		display: inline-block;
+		padding: 10px;
+		line-height: 20px;
+		color: #fff;
+		font-family: 'SimSun';
+		font-size: 14px;
+	}
+	/*=============新闻动态 end=============*/

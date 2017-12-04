@@ -1,0 +1,191 @@
+.page-banner {
+	width: 100%;
+	height: 768px;
+	background: url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-aboutus/contactus-banner-bg.png);
+	background-position: center;
+}
+.page-title {
+	width: 100%;
+	height: 768px;
+	background: url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-aboutus/contactus-banner-title.png) no-repeat;
+	background-position: center;
+}
+.modular-1 {
+	margin-bottom: 50px;
+}
+.modular-title {
+	width: 622px;
+	height: 60px;
+	background: url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-aboutus/contactus-tit.png) no-repeat;
+    margin: 40px auto;
+}
+.modular-1 .company-det .row > div >div {
+	position: relative;
+	padding: 10px;
+	padding-top: 90px;
+	height: 270px;
+	border: 1px solid #dcd8d9;
+	box-shadow: 5px 5px 5px 1px #ebecec;
+	text-align: center;
+	line-height: 36px;
+	background: #fff;
+}
+.col-md-4 {
+	margin-top: 100px;
+}
+.col-md-4>div>p.col-md-tit {
+	font-family: 'Simsun';
+	font-size: 16px;
+}
+.col-md-4>div>p:nth-child(1) {
+	font-family: 'Microsoft YaHei';
+	font-size: 16px;
+}
+.company-det .item-bg {
+	width: 140px;
+    height: 140px;
+    border-radius: 50%;
+	position: absolute;
+	top: 0;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: -70px;
+    background: #fff;
+}
+.company-det .wechat-pic {
+	width: 120px;
+	height: 120px;
+}
+.item-bg.itembg-adr {
+	border: 1px solid #32aef6;
+}
+.item-bg.itembg-tel {
+	border: 1px solid #ffb82b;
+}
+.item-bg.itembg-wechat {
+	border: 1px solid #70dce5;
+}
+
+
+.item-bg:after {
+	content: '';
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+	border-radius: 50%;
+	border: 1px dashed;
+}
+.itembg-adr:after { /*blue*/
+	border: 1px dashed #32aef6;
+}
+.itembg-tel:after { /*orange*/
+	border: 1px dashed #ffb82b;
+}
+.itembg-wechat:after { /*green*/
+	border: 1px dashed #70dce5;
+
+}
+
+.item-bg .circle {
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-25px 0 0 -25px;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+}
+.itembg-adr .circle {
+	background: #32aef6;
+}
+.itembg-tel .circle {
+	background: #ffb82b;
+}
+.itembg-wechat .circle {
+	background: #70dce5;
+}
+
+
+
+.center {
+	position:absolute; 
+	left:50%;
+	top:50%;
+	margin:-25px 0 0 -25px;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	text-align:center;
+}
+.itembg-adr .center {
+	background: #32aef6 url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-aboutus/contactus-icon.png);
+	background-position: 171px -31px;
+}
+.itembg-tel .center {
+	background:  #ffb82b url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-aboutus/contactus-icon.png);
+	background-position: 127px -31px;
+}
+.itembg-wechat .center {
+	background: #70dce5 url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-aboutus/contactus-icon.png);
+	background-position: 79px -31px;
+}
+
+
+
+
+
+
+.circle1 {
+	-moz-animation:circle 3s linear infinite;
+	-webkit-animation:circle 3s linear infinite;
+	animation:circle 3s linear infinite;
+}
+ .circle2 {
+	-moz-animation:circle 3s linear 0.8s infinite;
+	-webkit-animation:circle 3s linear 0.8s infinite;
+	animation:circle 3s linear 0.8s infinite;
+}
+ .circle3 {
+	-moz-animation:circle 3s linear 1.6s infinite;/* Safari and Chrome */
+	-webkit-animation:circle 3s linear 1.6s infinite;/* Safari and Chrome */
+	animation:circle 3s linear 1.6s infinite;
+}
+@-webkit-keyframes circle { /* Safari and Chrome */
+	from {
+		opacity:1;
+		-webkit-transform:scale(0);
+	}
+	to {
+		opacity:0;
+		-webkit-transform:scale(3);
+	}
+}
+
+.modular-2 .row {
+	padding: 30px;
+}
+iframe {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .modular-2 .row .col-md-12 {
+        width: 993px;
+    }
+}
+@media (min-width: 1190px) { 
+    .modular-2 .row .col-md-12 {
+        width: 1150px;
+    }
+}
+@media (max-width: 991px) { 
+    .modular-2 .row .col-md-12 {
+        width: 720px;
+    }
+}

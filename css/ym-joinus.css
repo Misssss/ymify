@@ -1,0 +1,218 @@
+.page-banner {
+	width: 100%;
+	height: 768px;
+	background: url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-aboutus/joinus-banner.png);
+	background-position: center;
+}
+.page-title {
+	width: 100%;
+	height: 768px;
+	background: url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-aboutus/joinus-title.png) no-repeat;
+	background-position: center;
+}
+.joinus-wrap {
+	background: #f4f4f4; 
+}
+.joinus-con {
+  padding: 2em;
+  min-height: 500px;
+}
+.joinus-con .nav {
+  position: relative;
+  padding: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #05518b;
+}
+.joinus-con .nav li.dian {
+  position: absolute;
+  top: 31px;
+  right: -7px;
+  font-size: 28px;
+  color: #05518b;
+  width: 14px;
+  height: 14px;
+  background: #05518b;
+  border-radius: 50%;
+}
+.joinus-con .nav li {
+  position: relative;
+}
+.joinus-con .nav li a {
+  color: #000;
+  font-size: 16px;
+}
+.joinus-con .nav li a:hover{
+  text-decoration: none;
+  background-color: transparent!important;
+  color: #05518b;
+}
+.joinus-con .nav li.active:after {
+  display: block;
+}
+.joinus-con .nav li.active a {
+  color: #05518b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-timeline-content ul li {
+  line-height: 26px;
+}
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.cd-timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+.cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+.cd-timeline-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.cd-timeline-img img {
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+.cd-timeline-img.cd-picture {
+  background: #d0d8e4;
+}
+.cd-timeline-img.cd-movie {
+  background: #f5d7a9;
+}
+.cd-timeline-img.cd-location {
+  background: #d17678;
+}
+
+.cd-timeline-content {
+  position: relative;
+  margin-left: 10px;
+  padding: 1em;
+  margin-top: 11px;
+}
+.cd-timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-content h2 {
+  position: relative;
+  color: #303e49;
+  font-size: 16px;
+  font-family: 'Microsoft Yahei';
+}
+.cd-timeline-content h2:after {
+  content: '●';
+  position: absolute;
+  top: -7px;
+  left: -30px;
+  font-size: 28px;
+  color: #05518b;
+}
+.cd-timeline-content p {
+  margin: 5px 0;
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: 'Microsoft Yahei';
+}
+.cd-timeline-content ul li {
+  font-size: 12px;
+  word-break: break-all;
+}
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+.cd-timeline-content .cd-read-more, 
+.cd-timeline-content .cd-date {
+  display: inline-block;
+}
+
+.cd-timeline-content .cd-read-more {
+  float: right;
+  padding: .8em 1em;
+  background: #acb7c0;
+  color: white;
+  border-radius: 0.25em;
+}
+.no-touch .cd-timeline-content .cd-read-more:hover {
+  background-color: #bac4cb;
+}
+.cd-timeline-content .cd-date {
+  float: left;
+  padding: .8em 0;
+  opacity: .7;
+}
+/*.cd-timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid #edf5fb;
+}*/
+
+
+

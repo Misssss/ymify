@@ -1,0 +1,63 @@
+.products-wrap {
+	background: #0f4c75;
+}
+@media screen and (max-width: 1000px) {
+	.products-wrap {
+		padding-top: 100px;
+	}
+}
+.products-wrap>div {
+	height: 700px;
+}
+.products-wrap .container {
+   display:table!important;
+   height:700px; 
+}
+.products-wrap .row {
+   display: table-cell!important;
+   vertical-align: middle;
+}
+section.fadeInLeft {
+	height: 300px;
+	margin: 60px 0;
+}
+section.fadeInRight {
+	height: 300px;
+	margin: 60px 0;
+}
+.products-wrap>div:nth-child(1) {
+	/*background: #0f4c75;*/
+	background: url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/Productservice/Productservicebackground.jpg);
+	background-size: cover;
+}
+.products-wrap>div.page-internet {
+	background: url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/Productservice/Productservicebackground.jpg);
+	background-size: cover;
+	-webkit-transform: rotate(180deg);
+}
+.page-internet .container {
+	-webkit-transform: rotate(180deg);
+}
+.products-wrap>div:nth-child(even) {
+	background: #fff;
+}
+.products-wrap>div:nth-child(odd) h3,
+.products-wrap>div:nth-child(odd) p {
+	color: #fff;
+	
+}
+.textbox h3 {
+	font-weight: bold;
+	color: #0f4c75;
+	margin-bottom: 30px;
+	font-family: 'SimHei';
+	font-size: 40px;
+}
+.textbox p {
+	color: #0f4c75;
+	font-size: 18px;
+	line-height: 30px;
+}
+.imgbox img {
+	width: 100%;
+}

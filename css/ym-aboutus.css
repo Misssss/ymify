@@ -1,0 +1,115 @@
+.page-banner {
+	width: 100%;
+	height: 768px;
+	background: #0f4972 url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-aboutus/aboutus-banner.png);
+	/*background-position: center;*/
+	background-size: cover; 
+}
+.page-title {
+	width: 100%;
+	height: 768px;
+	background: url(http://ymify-website.oss-cn-shanghai.aliyuncs.com/page-aboutus/aboutus-title.png) no-repeat;
+	background-position: center;
+}
+.modular-1,
+.modular-2 {
+	margin-top: 100px;
+}
+.modular-title {
+	position: relative;
+	text-align: center;
+	margin: 20px 20px 20px; 
+	font-size: 46px;
+	font-family: 'Microsoft YaHei';
+}
+.modular-title:after {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -75px;
+	width: 150px;
+	height: 2px;
+	background: black;
+}
+.modular-info {
+	padding: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-family:Simsun;
+	font-size:14px;
+}
+
+.modular-1 .number-box {
+	text-align: center;
+	padding: 50px;
+}
+.modular-1 .number-box .row>div {
+	font-size: 30px;
+	font-size: 58px;
+	font-family: 'Microsoft YaHei';
+}
+.modular-1 .number-box .row>div p {
+	margin-top: 10px;
+	font-size: 14px;
+	font-family: 'Simsun';
+}
+
+.modular-1 .modular-info {
+	font-family: 'Microsoft YaHei';
+	font-size: 14px;
+}
+.modular-2 img {
+	width: 100%;
+}
+.modular2-banner {
+	margin-bottom: 50px;
+}
+.modular-2 .container {
+	margin-bottom: 50px;
+}
+.modular2-team {
+	position: relative;
+	margin: 40px 0 60px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.modular2-team:before {
+	content: 'ELITE BRAND TEAM';
+	position: absolute;
+	bottom: -31px;
+	left: 0;
+	font-weight: 100;
+	font-size: 16px;
+}
+.modular2-desc {
+	position: relative;
+	line-height: 26px;
+	font-family:Simsun;
+	font-size:18px;
+}
+.modular2-desc:after {
+	content: '';
+	position: absolute;
+	top: -15px;
+	left: 0%;
+	width: 100%;
+	height: 1px;
+	background: black;
+}
+.modular-3 {
+	padding-top: 50px;
+	border-top: 1px solid #eee;
+	margin: 100px auto;
+}
+.modular-3 .container {
+	text-align: center;
+	padding-top: 50px;
+}
+.modular-3 img {
+	width: 80%;
+}
+
+.col-md-6+.col-md-6 {
+	margin-top: 80px;
+}
